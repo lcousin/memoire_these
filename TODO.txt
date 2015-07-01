@@ -1,0 +1,45 @@
+
+ * CHAPITRE 1 :
+
+  --> Parler de Belle II dans la partie accélérateurs du futur. A la fin rapidement ?
+  --> évolution des sections efficaces Higgstrahlung ee -> Zh et fusion WW: ee -> hvv Pk c'est comme ca ?
+  --> Couplage Yukawa quark top à 500 GeV : p44 28% apres 9.3% p47 ? (OK avec Yonamine:2011jg)
+      --> Paper : Measuring the top Yukawa coupling at the ILC at sqrt(s) = 500 GeV
+
+* CHAPITRE 2 :
+
+  --> 80e/um Ref ? +/- ~OK :)
+
+ * CHAPITRE 3 :
+
+  --> Fonction eta vérifier. OK.
+
+ * CHAPITRE 4 :
+  
+  --> Synthetiqer les descriptions de courbes.
+
+ * CHAPITRE 5 :
+
+Partie Alignement Capteurs/Echelles PLUMES :
+--> Revoir les sections.
+--> Pb = miniuit ne donne pas de vrais erreurs. Pas de matrice de covariance.
+--> Comment montrer les résultats ?
+--> Montrer les résidus.
+--> Expliquer la discretisation. OK a priori.
+
+ * Bruit de fond Faisceaux :
+
+--> Vertex R vs Z : 4 figures      (Status = OK)
+    --> Tout
+    --> 3 DL + BeamPipe
+    --> R<5 mm
+    --> P>=100 MeV/c : zoom zone interaction.
+
+--> Question des pics des rayons des vertex pour les particules retrodiffusées depuis les regions très à l'avant. (?) Plus nécéssaire
+--> Les deux trous ds le BeamCal ? Qque chose juste avant le BeamCal ? (pas le Pair Monitor car trop fin ...) (?) Plus nécessaire
+
+    --> Question différences anti-DID : fieldX02 / fieldX03 ? (p328)
+
+ * Conclusion :
+--> Redites ...
+

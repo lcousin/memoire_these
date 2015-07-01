@@ -1,0 +1,132 @@
+\documentclass[a4paper,11pt]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[francais]{babel}
+\usepackage{amsmath}
+\usepackage{geometry}
+\usepackage[pdftex]{graphicx}
+\usepackage[font={small,it}]{caption}
+\usepackage{subfigure}
+\subfigcapmargin = .5cm
+\usepackage{subcaption}
+\usepackage{textcomp}
+\usepackage[svgnames]{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{mindmap}
+\usepackage{pstricks}
+\usepackage[section]{placeins}
+\usepackage{amssymb}
+\usepackage{cancel}
+\usepackage{braket}
+\usepackage{cite}
+\usepackage{etex}
+% \reserveinserts{28}
+\usepackage{morefloats}
+\usepackage{rotating}
+\usepackage{cases}
+%\usepackage{comment}
+%\usepackage{fancyhdr}
+\usepackage[toc,page]{appendix}
+%\usepackage[page]{appendix}
+\usepackage{pdflscape}
+\usepackage{multicol}
+\usepackage{comment}
+\usepackage{stmaryrd}
+
+\usepackage{hyperref} % Créer des liens et des signets 
+\hypersetup{
+  colorlinks=true, %colorise les liens 
+  breaklinks=true, %permet le retour à la ligne dans les liens trop longs 
+  urlcolor= blue, %couleur des hyperliens 
+  linkcolor= DarkSlateGrey,	%couleur des liens internes 
+  citecolor= DarkSlateGrey,	%couleur des références 
+  pdftitle={M\'emoire de th\`ese}, %informations apparaissant dans 
+  pdfauthor={Lo\"ic Cousin}, %les informations du document 
+  pdfsubject={Trajectom\'etrie dans le cadre du projet europ\'een AIDA}
+  bookmark=true
+  linktocpage=true
+}
+
+\title{Trajectom\'etrie dans le cadre du projet europ\'een AIDA}
+\author{Lo\"ic COUSIN}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\pdfbookmark{\contentsname}{toc}
+\tableofcontents
+\cleardoublepage
+\pdfbookmark{Table de figures}{lof}
+\listoffigures
+
+\addtocontents{toc}{\protect\pagenumbering{roman}}  % pour la table des matières
+\addtocontents{lof}{\protect\pagenumbering{roman}}  % pour la table des figures
+
+
+\setcounter{secnumdepth}{2}
+
+% \pagestyle{fancy}
+
+\cleardoublepage
+
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+% \cleardoublepage
+\newpage
+%\null
+%\newpage
+
+\pdfbookmark{Introduction}{Introduction}
+\chapter*{Introduction}
+
+Depuis les ann\'ees 70, le Mod\`ele Standard est le fer de lance th\'eorique de la physique des particules. Il permet un accord avec les r\'esultats exp\'erimentaux allant jusqu'au pour mille. Une seule pierre angulaire \`a l'\'edifice \'etait manquante : le secteur de Brout-Englert-Higgs. Le m\'ecanisme de Higgs permet de briser spontan\'ement la sym\'etrie \'electrofaible et g\'en\`ere la masse des particules \'el\'ementaires. Postul\'ee th\'eoriquement depuis l'ann\'ee 1964, c'est le 4 Juillet 2012, au CERN, que la d\'ecouverte exp\'erimentale du boson de Higgs par les exp\'eriences du LHC, ATLAS et CMS, a \'et\'e proclam\'ee. Cette d\'ecouverte a \'et\'e r\'ealis\'ee avec une \'energie dans le centre de masse de 7 et 8 $TeV$. Ce grand succ\`es, permis par le Large Hadron Collider (LHC), a ouvert la voie \`a l'\'etude du boson de Higgs et de ses propri\'et\'es.
+
+\medskip
+
+En d\'epit de son grand succ\`es, le Mod\`ele Standard ne permet pas de d\'ecrire tous les ph\'enom\`enes physiques observ\'es dans la nature. Par exemple, il ne d\'ecrit ni la gravitation ni la mati\`ere noire. Après une interruption de presque deux ans, le LHC va red\'emarrer en 2015. Son programme de recherche continuera avec cette fois-ci une \'energie dans le centre de masse de 13-14 $TeV$. Les donn\'ees recueillies permettront de mieux connaître les propri\'et\'es du boson de Higgs et de rechercher des manifestations de physique au-delà du mod\`ele standard. Cependant, d'autres acc\'el\'erateurs de particules visant \`a \'eclaircir ces questions sont \`a l'\'etude. Ils permettront de r\'epondre, conjointement avec le LHC, aux deux grandes questions de la physique des particules d'aujourd'hui : la brisure spontan\'ee de la sym\'etrie \'electrofaible et la recherche d'une nouvelle physique. L'International Linear Collider (ILC) fait partie de ces projets d'acc\'el\'erateurs. Il devrait voir le jour \`a l'horizon 2030. Il s'agit d'un collisionneur lin\'eaire d'\'electrons et de positons. Les collisions $e^- \, e^+$ permettent une plus grande pr\'ecision de mesure que les collisionneurs hadroniques comme le LHC. En effet, l'\'etat initial est parfaitement connu et le bruit de fond QCD est quasi-inexistant. L'ILC permettra une \'etude fine de la masse, de la largeur, des couplages et des nombres quantiques du boson de Higgs. En particulier, les diff\'erents processus de production du boson de Higgs (Higgsstrahlung, fusion $WW$, fusion $ZZ$) permettront de mesurer ces grandeurs. De plus, gr\^ace notamment aux mesures de grandes pr\'ecisions qu'il permettra, l'ILC ouvrira la voie \`a la d\'ecouverte d'une physique nouvelle.
+
+% , $t\overline{t}H$
+\medskip
+
+L'une des \'etudes r\'ealisables \`a l'ILC concernera les couplages du boson de Higgs aux fermions et aux bosons de jauge (voire \`a lui-m\^eme). Une pr\'ecision allant de l'ordre de quelques pour-cents \`a quelques pour-milles devrait \^etre atteinte. Ces \'etudes requièrent un excellent \'etiquetage des saveurs lourdes. Le d\'efi r\'eside dans l'\'etiquetage pr\'ecis des jets issus des quarks $c$ et des leptons $\tau$. Cette t\^ache est rendue difficile par la faible distance de vol de ces particules, de l'ordre de 100 $\mu m$. Afin de distinguer ces saveurs, un d\'etecteur de vertex adapt\'e est n\'ecessaire. Il devra \^etre conçu \`a partir de capteurs atteignant une r\'esolution spatiale de l'ordre de quelques microm\`etres. De plus il devra pr\'esenter un budget de mati\`ere r\'eduit, avoir sa premi\`ere couche la plus proche possible du point d'interaction et devra enfin avoir un temps de lecture adapt\'e au taux d'occupation domin\'e par le bruit de fond du faisceau, provenent essentiellement du processus de \textit{beamstrahlung}. Ces objectifs ambitieux am\`enent \`a la r\'ealisation de capteurs pr\'esentant le meilleur compromis granularit\'e, minceur, vitesse de lecture, puissance dissip\'ee et r\'esistance aux rayonnement intenses.
+
+\medskip
+
+Afin de r\'epondre aux exigences de ce cahier des charges, le groupe \textit{PICSEL} de l'IPHC travaille depuis une quinzaine d'ann\'ees dans la conception, les tests, et la recherche sur des capteurs bas\'es sur le proc\'ed\'e industriel $CMOS$, particuli\`erement adapt\'e pour \'equiper les d\'etecteurs de vertex des futurs acc\'el\'erateurs de particules $e^+ e^-$ comme celui de l'ILC ou de Super KEKB (Belle II). Avec l'aide des partenaires du $WorkPackage$ 9.3 du projet europ\'een AIDA (Advanced European Infrastructures for Detectors at Accelerators) un futur t\'elescope de faisceau est \`a l'\'etude. Il servira \`a l'\'elaboration des futurs d\'etecteurs de vertex. En particulier, il s'agit d'une \'etape suppl\'ementaire vers la conception d'un d\'etecteur de vertex pour l'ILC. Il sera constitu\'e d'un t\'elescope de 3 plans, d'une cible et d'un secteur de d\'etecteur de vertex. Ces trois plans de t\'elescope pourront \^etre des super-plans SALAT de grande surface et de grande pr\'ecision d\'evelopp\'es dans le groupe PICSEL. Le secteur de d\'etecteur de vertex, pourra quant \`a lui, \^etre compos\'e d'\'echelles double face de capteurs CMOS. Pour r\'ealiser de telles \'echelles, le projet PLUME (Pixel Ladders with Ultra-low Material Embedding) vise \`a assembler des capteurs CMOS sur les deux faces d'un m\^eme support ultra-l\'eger. Outre le fait de n'utiliser qu'un unique support pour 2 couches de capteurs et donc de r\'eduire le budget de mati\`ere, les deux points de mesures situ\'es de part et d'autre de l'échelle double face, formant un \textit{mini-vecteur}, pourront servir \`a la trajectom\'etrie et \`a l'alignement des capteurs dans un d\'etecteur de vertex. De plus, le concept de double face de capteurs facilite l'obtention d'un compromis entre vitesse de lecture et r\'esolution spatiale. En effet, l'une des couches de l'\'echelle pourra \^etre dot\'ee d'une r\'esolution spatiale accrue pour une vitesse de lecture mod\'er\'ee, alors que l'autre, pourvue d'une moins bonne r\'esolution spatiale, pourra être optimis\'ee pour une plus grande vitesse de lecture. Ces caract\'eristiques sont requises afin de composer avec le bruit de fond machine de l'ILC.
+
+\medskip
+
+\'Etant donn\'ee la pr\'ecision de l'ordre de quelques microm\`etres qui devra \^etre atteinte pour les \'echelles du d\'etecteur de vertex de l'ILC, un alignement sub-microm\'etrique de celles-ci est n\'ecessaire afin de pr\'eserver leurs pr\'ecision. Cette th\`ese s'ins\`ere tout particuli\`erement dans l'\'etude de l'alignement d'échelles double face en utilisant le principe de \textit{mini-vecteurs}, dans le cadre de l'alignement du d\'etecteur de vertex de l'ILC. La reconstruction de \textit{mini-vecteurs} \`a l'aide d'\'echelles double face de capteurs pourrait permettre des am\'eliorations dans la reconstruction des traces traversant les \'echelles double face. En effet, les \textit{mini-vecteurs} de chaque \'echelle peuvent \^etre reconstruits ind\'ependamment du d\'esalignement des \'echelles et autorisent l'initialisation d'une trace sans information pr\'ealable ni sur la position du vertex ni sur les autres impacts pr\'esents sur les autres couches du d\'etecteur de vertex. Ainsi, ils pourront amener une am\'elioration dans le processus de \textit{pattern recognition}. Ils pourront aussi servir \`a l'am\'elioration de la reconstruction des traces de faible impulsion d\'ebutant dans le d\'etecteur de vertex. Les propri\'et\'es des \textit{mini-vecteurs} pourront de plus \^etre utilis\'ees pour l'identification du bruit de fond faisceau \`a l'ILC. \`A cause de toutes ces propri\'et\'es, les \textit{mini-vecteurs} pourraient permettre d'aligner deux \'echelles d'une même couche selon leur zone de recouvrement. Cette technique am\`enera des contraintes sur certains \textit{modes faibles} rencontr\'es lors d'un alignement global des d\'etecteurs. L'objectif de cette th\`ese est de d\'emontrer la faisabilit\'e de ce type d'alignement avec \textit{mini-vecteurs}.
+
+\medskip
+
+Le taux d'occupation des capteurs CMOS pour l'ILD sont directement reli\'es aux impacts de bruit de fond faisceau-faisceau de l'ILC. Comme nous le verrons par la suite, ce type de bruit de fond autrement appel\'e \textit{beamstrahlung} domine de plusieurs ordres de grandeurs les processus issus des collisions. Aussi, nous \'etablirons une \'etude de ce bruit de fond faisceau-faisceau \`a l'aide de simulations \textit{monte-carlo} dans le but de remonter aux taux d'occupation des capteurs CMOS pour le d\'etecteur de vertex de l'ILD. Nous en d\'eduirons alors les temps de lecture n\'ecessaires pour les capteurs CMOS de chaque couche du d\'etecteur de vertex.
+
+\medskip
+
+Ce m\'emoire de th\`ese sera organis\'e de la façon suivante : dans le chapitre premier, nous introduirons le mod\`ele standard de la physique des particules. Nous attacherons un soin tout particulier au secteur \'electrofaible et \`a la brisure de celui-ci par le m\'ecanisme de Higgs. Nous \'etudierons alors la physique du Higgs \`a l'ILC ainsi que les potentialit\'es de physique hors du mod\`ele standard. Nous d\'ecrirons les d\'etecteurs de l'ILD et notamment le d\'etecteur de vertex en développement dans le groupe \textit{PICSEL}. Dans le second chapitre, nous \'etudierons les capteurs CMOS d\'eveloppés pour ce d\'etecteur de vertex et leur fonctionnement. Nous nous pencherons alors sur le futur t\'elescope en faisceau d\'evelopp\'e par les partenaires du WorkPackage 9.3 du projet europ\'een AIDA. Ce t\'elescope permettra de développer les outils adéquats pour la r\'ealisation des d\'etecteurs de vertex du futur. Dans le chapitre 3, nous montrerons les résultats des tests en faisceaux d'un super-plan SALAT, d'une \'echelle double face PLUME, constitu\'es de capteurs CMOS. Nous nous questionnerons sur les r\'esultats et notamment sur le concept de \textit{mini-vecteurs} entre les deux faces d'une \'echelle PLUME. Avant de pouvoir \'etudier notre nouvelle m\'ethode d'alignement, des simulation Monte-Carlo d'\'echelles double face sont n\'ecessaires. Ainsi, dans le chapitre 4, nous nous int\'eresserons \`a la conception d'une simulation GEANT4 de capteurs CMOS et d'\'echelles PLUME, capable de reproduire les donn\'ees collect\'ees en faisceaux tests. Nous pourrons alors \'etudier dans le dernier chapitre de ce m\'emoire, l'apport des \'echelles double face en terme d'alignement, en utilisant le principe des mini-vecteurs. Pour cela nous d\'ecrirons les algorithmes d'alignement commun\'ement utilis\'es, puis nous ferons une \'etude de notre nouvelle m\'ethode d'alignement de deux \'echelles double face d'une m\^eme couche, selon leur zone de recouvrement grâce \`a nos simulations d'\'echelles \textit{PLUME} et \`a un algorithme d'alignement bas\'e sur les mini-vecteurs. Cela nous m\`enera comme nous le verrons par la suite \`a l'\'etude du bruit de fond faisceau-faisceau \`a l'ILC dans le but de d\'eterminer des temps de lecture r\'ealistes pour les capteurs CMOS du d\'etecteur de vertex de l'ILD.
+
+% faire une mini conclusion. \\
+
+\cleardoublepage
+\pdfbookmark{Remerciements}{Remerciements}
+\chapter*{Remerciements :}
+
+\include{Chap1}
+\include{Chap2}
+\include{Chap3}
+\include{Chap4}
+\include{Chap5}
+\include{Conclusion}
+\include{Annexe}
+
+%\bibliographystyle{plain}
+\cleardoublepage
+\pdfbookmark{Bibliographie}{Bibliographie}
+\bibliographystyle{ieeetr}
+\bibliography{Bibliographie}
+%\pdfbookmark{Bibliographie}{Bibliographie}
+\end{document}
